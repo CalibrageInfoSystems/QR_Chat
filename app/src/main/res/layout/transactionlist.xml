@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:paddingBottom="@dimen/row_padding"
+    android:paddingLeft="@dimen/activity_margin"
+    android:paddingRight="@dimen/activity_margin"
+android:orientation="vertical"
+    android:weightSum="1"
+
+    android:paddingTop="@dimen/row_padding">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_10"
+        android:layout_marginStart="@dimen/_100dp"
+        android:background="@drawable/sent_bg"
+android:id="@+id/linear"
+
+        android:layout_gravity="right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/thumbnail"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="6dp"
+
+            android:paddingRight="6dp"
+            android:text="Roja"
+
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/contact_name" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@drawable/line"
+
+            android:layout_height="2dp">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_toRightOf="@id/callicon"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+android:layout_marginTop="@dimen/margin_5"
+            android:text="Data.............................."
+            android:textColor="@color/half_black2"
+            android:textSize="@dimen/_16dp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:gravity="right"
+            android:maxLength="10"
+            android:layout_toRightOf="@id/callicon"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:textAlignment="textEnd"
+            android:text="12"
+            android:textColor="@color/half_black2"
+            android:textSize="@dimen/margin_12" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_marginEnd="@dimen/_100dp"
+        android:id="@+id/linear2"
+        android:padding="@dimen/margin_10"
+        android:background="@drawable/white_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/amount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/thumbnail"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:text="Roja"
+
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/contact_name" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@drawable/line"
+            android:layout_height="2dp">
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/description2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_toRightOf="@id/callicon"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:text="Data.............................."
+            android:textColor="@color/half_black2"
+            android:textSize="@dimen/_16dp" />
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:gravity="right"
+            android:maxLength="10"
+            android:layout_toRightOf="@id/callicon"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:textAlignment="textEnd"
+            android:text="12"
+            android:textColor="@color/half_black2"
+            android:textSize="@dimen/margin_12" />
+
+
+    </LinearLayout>
+</LinearLayout>

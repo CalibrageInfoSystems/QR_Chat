@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/grp1" >
+        <item
+            android:id="@+id/share"
+            android:title="@string/share"
+            android:icon="@drawable/ic_camera" />
+    </group>
+    <group android:id="@+id/grp2" >
+        <item
+            android:id="@+id/edit"
+            android:title="@string/edit"
+            android:icon="@drawable/ic_voice_call" />
+    </group>
+    <group android:id="@+id/grp3" >
+        <item
+            android:id="@+id/viewinaddressbook"
+            android:title="@string/viewinaddressbook"
+            android:icon="@drawable/ic_video_call" />
+    </group>
+    <group android:id="@+id/grp4" >
+        <item
+            android:id="@+id/verifysecuritycode"
+            android:title="@string/verifysecuritycode"
+            android:icon="@drawable/ic_location" />
+    </group>
+
+</menu>

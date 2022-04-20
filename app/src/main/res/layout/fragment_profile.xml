@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/very_lightgrey"
+    tools:context=".Views.home.ProfileFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView1"
+                android:layout_width="103dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_user" />
+            <TextView
+                android:id="@+id/displayName"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="16dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:textColor="@color/appColor"
+                android:text="@string/displayName"/>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black"
+                    android:text="@string/qrpayId"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/qrpayId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black"
+                    android:text=" xyz001"
+                    android:textSize="14dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+              android:weightSum="1"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:background="@color/transparent"
+                    android:id="@+id/qrcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  android:text="@string/qrcode"
+                    android:layout_weight="0.9"
+                    android:layout_margin="@dimen/margin_10"
+                    android:textStyle="bold"
+                    android:textColor="@color/appColor"
+                    android:fontFamily="@font/varela_regular"
+              />
+                <TextView
+                    android:background="@color/transparent"
+                    android:id="@+id/editProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit"
+
+                    android:drawableLeft="@drawable/icon_edit"
+                   android:layout_margin="@dimen/margin_10"
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    android:layout_weight="0.05"
+                    android:textColor="@color/appColor"
+                    android:fontFamily="@font/varela_regular"
+
+                   />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/ic_launcher_round" >
+
+
+            </ImageView>
+
+            <TextView
+               android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/qrcode"
+                android:textAlignment="center"
+
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+
+        android:layout_height="0dp"
+        android:background="@drawable/white_bg"
+
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginBottom="50dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:id="@+id/profileRecyclerview"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</FrameLayout>

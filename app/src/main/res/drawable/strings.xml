@@ -1,0 +1,384 @@
+<resources>
+    <string name="app_name">QR Chat</string>
+    <string name="hyperlink">يوافق علي <a href="">الأحكام والشروط</a></string>
+    <string name="signup"><u>سجل</u></string>
+
+    <string name="error">خطأ</string>
+    <string name="ok">حسنا</string>
+
+
+    <string name="welcome">أهلا بك</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="pleaseenternumberqrid">الرجاء إدخال الرقم (أو) QR IDا</string>
+    <string name="pleaseenterpassword">الرجاء إدخال كلمة المرور</string>
+    <string name="username">رقم (أو) QRid</string>
+    <string name="password">كلمه السر</string>
+    <string name="forgotPassword">هل نسيت كلمة المرور</string>
+    <string name="forgotPasswordqn">هل نسيت كلمة المرور؟</string>
+    <string name="donthaveanaccount">لا تملك حساب؟</string>
+
+    <string name="pleaseuploadpicture">يرجى تحميل صورتك</string>
+    <string name="pleaseentername">الرجاء إدخال الاسم</string>
+    <string name="pleaseenterregion">يرجى تحديد المنطقة</string>
+    <string name="pleaseenternumber">الرجاء إدخال الرقم</string>
+    <string name="minimumNumber">الرجاء إدخال رقم بحد أدنى 4 أرقام</string>
+    <string name="pleaseacceptTC">الرجاء قبول الشروط والأحكام</string>
+    <string name="selectAction">اختر فعلا</string>
+    <string name="selectfromgallery">حدد صورة من المعرض</string>
+    <string name="selectfromcamera">التقاط صورة من الكاميرا</string>
+
+
+    <string name="register">تسجيل</string>
+    <string name="createyouraccount">أنشئ حسابك</string>
+    <string name="uploadyourpic">ارفع صورتك</string>
+    <string name="name">اسم</string>
+    <string name="region">منطقة</string>
+    <string name="number">رقم</string>
+
+
+
+    <string name="success">نجاح</string>
+    <string name="incorrect">غير صحيح</string>
+    <string name="pleaseenterotp">الرجاء إدخال OTP</string>
+    <string name="pleaseentervalidotp">الرجاء إدخال OTP صالح</string>
+    <string name="submitsuccessfull">أرسل بنجاح</string>
+
+
+    <string name="resetpassword">إعادة تعيين كلمة المرور</string>
+    <string name="enterpassword">الرجاء إدخال كلمة المرور</string>
+    <string name="enterNewpassword">الرجاء إدخال كلمة مرور جديدة</string>
+    <string name="passwordValidation">يجب أن يحتوي على رقم واحد على الأقل وحرف واحد كبير وصغير و 8 أحرف على الأقل أو أكثر</string>
+    <string name="enterconfirmpassword">الرجاء إدخال تأكيد كلمة المرور</string>
+    <string name="passworddoesntmatch">كلمة المرور وتأكيد كلمة المرور غير متطابقين</string>
+    <string name="passwordsubmitted">الرجاء تسجيل الدخول.</string>
+    <string name="passwordrestsuccess">كلمة المرور هي إعادة تعيين. الرجاء تسجيل الدخول.</string>
+
+
+
+    <string name="confirmpassword">مسجل بنجاح. الرجاء تسجيل الدخول.</string>
+    <string name="submit">إرسال</string>
+    <string name="cancel">إلغاء</string>
+
+    <string name="onetimepassword">كلمة السر لمرة واحدة</string>
+    <string name="enterotpsenttoregisteredmobilenumber">أدخل OTP المرسل إلى رقم هاتفك المحمول المسجل</string>
+    <string name="resendotp">إعادة إرسال OTP</string>
+
+
+    <string name="chats">الدردشات</string>
+    <string name="call">مكالمة</string>
+    <string name="explore">يكتشف</string>
+    <string name="profile">امظهر</string>
+    <string name="Language">لغة</string>
+    <string name="chooselanguage">اختر اللغة</string>
+    <string name="choose_language_str">اختر اللغة</string>
+    <string name="telugu_str">عربى</string>
+
+
+    <string name="english_str">الإنجليزية</string>
+
+
+    <string name="server_error">An Error occured</string>
+
+    <string name="status">Status</string>
+    <string name="gender">Gender</string>
+    <string name="location">Location</string>
+    <string name="updateprofile">Update Profile</string>
+    <string name="myprofile">My Profile</string>
+    <string name="pleaseenteremail">Please Enter Email</string>
+    <string name="pleaseenterstatus">Please Enter Status</string>
+    <string name="pleaseenterlocation">Please Enter Location</string>
+    <string name="selectgender">Please Select Gender</string>
+    <string name="qrscanner">QR Scanner</string>
+    <string name="Sendmoney">Send Money</string>
+    <string name="Recivemoney">Recive Money</string>
+    <string name="spiltMoney">Split Money</string>
+    <string name="hadiatmoney">Hadiat Money</string>
+    <string name="transactions">Transactions</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="alert_logout">Are you sure you want to Logout?</string>
+
+    <string name="nochat">لا توجد بيانات دردشة متاحة</string>
+    <string name="action_search">بحث</string>
+    <string name="search_hint">بحث</string>
+
+    <string name="newpassword">كلمة سر جديدة</string>
+
+    <string name="lifeshots">لقطات الحياة</string>
+    <string name="walkinplatform">المشي في المنصة</string>
+    <string name="news">أخبار</string>
+    <string name="subscriptions">الاشتراكات</string>
+    <string name="findNearby">البحث في مكان قريب</string>
+
+    <string name="qrpayaccount">حساب QR-PAY</string>
+    <string name="mylifeshots">صور حياتي</string>
+    <string name="favorites">المفضلة</string>
+    <string name="stickersgallery">معرض الملصقات</string>
+    <string name="accountsettings">إعدادت الحساب</string>
+    <string name="appsettings">إعدادات التطبيقات</string>
+    <string name="displayName">اسم العرض</string>
+    <string name="qrpayId">معرف QR-Pay:</string>
+
+    <string name="phone">هاتف</string>
+    <string name="qrchatid">معرف QRChat</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="facebook">موقع التواصل الاجتماعي الفيسبوك</string>
+    <string name="Instagram">انستغرام</string>
+    <string name="loggeddevices">الأجهزة المسجلة</string>
+    <string name="switchaccount">تبديل الحساب</string>
+    <string name="logout">تسجيل خروج</string>
+
+    <string name="textsize">حجم الخط</string>
+    <string name="datausage">استخدام البيانات</string>
+    <string name="autodownload">تنزيل تلقائي</string>
+    <string name="theme">موضوع</string>
+    <string name="managestorage">ادارة المساحة</string>
+    <string name="security">الأمان</string>
+    <string name="apppermissions">أذونات التطبيق</string>
+
+
+    <string name="money">مال</string>
+    <string name="wallet">محفظة نقود</string>
+    <string name="dailyservices">الخدمات اليومية</string>
+    <string name="entertainment">وسائل الترفيه</string>
+    <string name="booking">الحجز</string>
+    <string name="mobilerecharge">شاحن النقال</string>
+    <string name="kaharamaelecwater">مياه كهرمة الكهربائية</string>
+    <string name="qatarcharity">قطر الخيرية</string>
+
+    <string name="onlineshopping">التسوق عبر الانترنت</string>
+    <string name="qticket">Q- تذكرة</string>
+    <string name="ebooking">الحجز الإلكتروني</string>
+    <string name="cinema">سينما</string>
+    <string name="hotels">الفنادق</string>
+    <string name="flightBookings">حجوزات الطيران</string>
+    <string name="food">طعام</string>
+    <string name="bus">حافلة</string>
+
+    <string name="qrmoney">QR المال</string>
+    <string name="payfrom">ادفع من</string>
+    <string name="receiveMoney">إستلم نقود</string>
+    <string name="payforcreditcard">ادفع مقابل بطاقة الائتمان</string>
+    <string name="sendtobankAccount">أرسل إلى حساب بنكي</string>
+    <string name="payforqatarcharity">دفع لقطر الخيرية</string>
+    <string name="paythroughqrcode">ادفع من خلال رمز الاستجابة السريعة</string>
+    <string name="donotshare">لا تشارك هذا الرمز مع الآخرين / لقطة شاشة</string>
+    <string name="terms">الأحكام والشروط</string>
+
+    <string name="scanqrtopaymoney">امسح رمز الاستجابة السريعة للدفع</string>
+    <string name="receivemoneyfromanyqrchatuser">تلقي الأموال من أي مستخدم QRCHAT</string>
+    <string name="saveqrimage">حفظ صورة QR</string>
+    <string name="withamount">بالمبلغ</string>
+    <string name="managereceipt">إدارة الإيصالات</string>
+    <string name="scan">Scan</string>
+    <string name="creatgroup">Create Group</string>
+    <string name="addfriends">Add Friends</string>
+    <string name="newchat">New Chat</string>
+    <string name="qrcare">Qr Care</string>
+
+    <string name="qrwallet">QR- المحفظة</string>
+    <string name="balance">توازن</string>
+    <string name="toptup">فوق حتى</string>
+    <string name="withdraw">انسحب</string>
+    <string name="managecards">إدارة البطاقات</string>
+    <string name="transactionshistory">تاريخ المعاملات</string>
+    <string name="paymentprivacy">خصوصية الدفع</string>
+    <string name="helpcenter">مركز المساعدة</string>
+    <string name="label_buy_now">Submit</string>
+    <string name="cardtype">Card Type</string>
+    <string name="bankname">اسم البنك</string>
+    <string name="cardholdername">Card Holder Name</string>
+    <string name="pleaseentercardholdername">الرجاء إدخال اسم حامل البطاقة</string>
+    <string name="pleaseenterbankname">الرجاء إدخال اسم البنك</string>
+    <string name="selectcardtype">الرجاء تحديد نوع البطاقة</string>
+    <string name="isdefault">IsDefault</string>
+    <string name="Addnewcard">Add New Card</string>
+    <string name="paymentdetails">Payment Details</string>
+
+    <string name="text_settings_header_title">My settings</string>
+    <string name="text_settings_header_edit_button">EDIT</string>
+    <string name="text_settings_user_id_badge">User ID</string>
+    <string name="text_settings_theme_title">Dark theme</string>
+    <string name="text_settings_disturb_title">Do not disturb</string>
+    <string name="text_settings_sign_out_title">Sign out</string>
+    <string name="text_settings_change_user_nickname">Change nickname</string>
+    <string name="text_settings_change_user_nickname_hint">Enter nickname</string>
+    <string name="text_settings_change_user_profile_image">Change profile image</string>
+
+    <string name="text_tab_channels">Channels</string>
+    <string name="text_tab_settings">My settings</string>
+    <string name="text_tab_badge_max_count">99+</string>
+    <string name="text_version_info">UI Kit v%1$s &#160;&#160;&#160;&#160; SDK v%2$s</string>
+    <string name="Camera">Camera</string>
+    <string name="voicecall">Voice Call</string>
+    <string name="vediocall">Video Call</string>
+    <string name="gallery">Gallera</string>
+    <string name="transFer">Transfer</string>
+    <string name="contacts">Contacts</string>
+    <string name="hadiat">Hadlyat</string>
+    <string name="nocontactAvailable">No Contact Available</string>
+    <string name="nickname">Nick Name</string>
+    <string name="enternickname">Please Enter NickName</string>
+    <string name="request_external_storage">Storage access permissions are required to upload/download files.</string>
+    <string name="request_download_file">Download file?</string>
+    <string name="accept_permission">Okay</string>
+
+
+    <string name="calls_app_name">Sendbird Calls</string>
+    <string name="calls_quickstart_version">Quickstart %s</string>
+    <string name="calls_sdk_version">SDK %s</string>
+    <string name="calls_sign_in_with_qrcode">Sign in with QR code</string>
+    <string name="calls_scanning_a_qrcode_description">Scan QR code from Calls studio on Sendbird dashboard.</string>
+    <string name="calls_or">Or</string>
+    <string name="calls_sign_in_manually">Sign in with ID</string>
+    <string name="calls_sign_in_manually_title">Sign in</string>
+    <string name="calls_app_id">Application ID</string>
+    <string name="calls_user_id">User ID</string>
+    <string name="calls_access_token">Access token (optional)</string>
+    <string name="calls_sign_in">Sign in</string>
+
+    <string name="calls_empty_nickname">—</string>
+    <string name="calls_user_id_format">User ID: %s</string>
+    <string name="calls_and_character">" · "</string>
+
+    <string name="calls_notification_voice_calling_content">Voice call from %s</string>
+    <string name="calls_notification_video_calling_content">Video call from %s</string>
+    <string name="calls_notification_accept">Accept</string>
+    <string name="calls_notification_decline">Decline</string>
+    <string name="calls_notification_end">End</string>
+
+    <string name="calls_make_a_call">Make a call</string>
+    <string name="calls_history">Recents</string>
+    <string name="calls_no_call_history">No call history</string><!-- remove -->
+    <string name="calls_settings">Settings</string>
+    <string name="calls_application_information">Application information</string>
+    <string name="calls_application_name">Name</string>
+    <string name="calls_application_id">ID</string>
+    <string name="calls_sign_out">Sign out</string>
+
+    <string name="calls_muted_this_call">%s is muted</string>
+    <string name="calls_incoming_voice_call">incoming voice call&#8230;</string>
+    <string name="calls_incoming_video_call">incoming video call&#8230;</string>
+    <string name="calls_connecting_call">connecting&#8230;</string>
+    <string name="calls_calling">making voice call&#8230;</string>
+    <string name="calls_video_calling">making video call&#8230;</string>
+    <string name="calls_ending_voice_call">voice call ending&#8230;</string>
+    <string name="calls_ending_video_call">video call ending&#8230;</string>
+
+    <string name="calls_end_result_no_answer">No answer</string>
+    <string name="calls_end_result_canceled">Canceled</string>
+    <string name="calls_end_result_declined">Declined</string>
+    <string name="calls_end_result_completed">Ended</string>
+    <string name="calls_end_result_timed_out">Timed out</string>
+    <string name="calls_end_result_connection_lost">Connection lost</string>
+    <string name="calls_end_result_unknown">Unknown</string>
+    <string name="calls_end_result_accept_failed">Accept failed</string>
+    <string name="calls_end_result_dial_failed">Dial failed</string>
+    <string name="calls_end_result_other_device_accepted">Other device accepted</string>
+
+    <string name="calls_invalid_notifications_setting_in_dashboard">Turn on notifications on the Sendbird dashboard to allow mobile sign in.</string>
+    <string name="calls_invalid_qrcode">This QR code is not valid. Go to Calls studio and try scanning your QR code again.</string>
+    <string name="calls_invalid_deep_link">Invalid deep link</string>
+    <string name="calls_deep_linking_to_authenticate_failed">Could not authenticate deep link.</string>
+    <string name="qrcode">QrCode</string>
+
+
+    <string name="availablebalance">الرصيد المتوفر</string>
+    <string name="addMoney">إضافة المال</string>
+    <string name="enterAmount">أدخل المبلغ</string>
+    <string name="pleaseselectCard">الرجاء تحديد البطاقة</string>
+
+
+    <string name="mycards">بطاقاتي</string>
+    <string name="yourcard">بطاقاتك</string>
+    <string name="addcard">إضافة بطاقة</string>
+
+    <string name="Exp">تاريخ انتهاء الصلاحية</string>
+    <string name="manage">يدير</string>
+    <string name="remove">إزالة</string>
+
+
+    <string name="nameonthecard">الاسم على البطاقة</string>
+    <string name="cardnumber">رقم البطاقة</string>
+    <string name="cvv">CVV</string>
+
+    <string name="amountdetails">تفاصيل المبلغ</string>
+    <string name="selectCard">حدد البطاقة</string>
+
+    <string name="pleaseentercardnumber">الرجاء إدخال رقم البطاقة</string>
+    <string name="pleaseenterexpirydate">الرجاء إدخال تاريخ انتهاء الصلاحية</string>
+    <string name="pleaseentercvv">الرجاء إدخال CVV</string>
+
+
+    /////////////////////Split Money//////////////
+
+    <string name="pleaseentervalidname">رجاء ادخل اسما صحيحا</string>
+    <string name="groupalreadyexists">المجموعة موجودة بالفعل</string>
+    <string name="groupcreatedsuccessfully">تم إنشاء المجموعة بنجاح</string>
+    <string name="createnewgroup">إنشاء مجموعة جديدة</string>
+
+
+    <string name="allgroupsdeleted">تم حذف جميع المجموعات</string>
+    <string name="nothingtodelete">لا شيء لحذفه</string>
+    <string name="groups">مجموعات</string>
+
+
+    <string name="entergroupname">أدخل اسم المجموعة</string>
+
+    <string name="listallgroups">قائمة بجميع المجموعات</string>
+    <string name="grouplateron">أضف الأعضاء والمصروفات إلى مجموعتك لاحقًا</string>
+    <string name="splititeasy">تقسيمها بسهولة</string>
+    <string name="deleteallgroups">حذف كافة المجموعات</string>
+    <string name="deleteallmembers">حذف كافة الأعضاء</string>
+
+    <string name="members">أفراد</string>
+    <string name="expenses">نفقات</string>
+    <string name="balances">أرصدة</string>
+
+    <string name="allmembersdeleted">تم حذف كافة الأعضاء</string>
+
+
+    <string name="Rs">\u20B9</string>
+
+    <string-array name="currencySymbols">
+        <item>INR-(₹)</item>
+        <item>USD-($)</item>
+        <item>EUR-(€)</item>
+        <item>YEN-(¥)</item>
+    </string-array>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="copyright">Copyright © 2019 Nishant Boro</string>
+    <string name="developer">Designed &amp; Developed By Nishant Boro</string>
+    <string name="addcontact">Add Contact</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="scanqr">Scan QR Code</string>
+
+    <string name="group_channel_list_file_message_text">%1$s has uploaded a file.</string>
+    <string name="download">Download</string>
+
+    <string name="upload">Upload</string>
+    <string name="resend_message">Resend</string>
+    <string name="delete_message">Delete</string>
+
+    <string name="user_typing">%s is typing</string>
+    <string name="two_users_typing">%s and %s are typing</string>
+    <string name="users_typing"> Multiple users are typing</string>
+
+
+    <string name="all_group_channels">Group Channels</string>
+    <string name="all_open_channels">Open Channels</string>
+    <string name="Anotherpaymentmedthods">Another payment methods</string>
+    <string name="phonenumber">Phone Number</string>
+    <string name="Sendrequest">Send Request</string>
+    <string name="generatedqrcode">Generated QRcode</string>
+    <string name="Addreason">Add Reason</string>
+    <string name="Enterreason">Enter Reason</string>
+    <string name="Reason">Reason</string>
+    <string-array name="switch_tabs">
+
+        <item>All</item>
+        <item>Received</item>
+        <item>Sent</item>
+    </string-array>
+</resources>

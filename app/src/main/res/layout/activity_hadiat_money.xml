@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Views.home.HadiatMoney">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolBarTheme.ToolBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/appColor"
+        android:visibility="visible"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+            <TextView
+
+                android:textStyle="bold"
+                style="@style/Text"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/back"
+                android:text="@string/hadiatmoney"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="@string/amouteach"
+            android:gravity="bottom"
+            android:paddingTop="4dp"
+            android:clipToPadding="false"
+            android:textColorHint="@color/black">
+
+            <EditText
+
+                android:id="@+id/amount_et"
+                style="@style/CustomEditText"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="number"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:paddingStart="10dp"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="@string/Bestwishes"
+            android:gravity="bottom"
+
+            android:clipToPadding="false"
+            android:textColorHint="@color/black">
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/wishes_et"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingStart="10dp"
+                style="@style/CustomEditText"
+                android:maxLines="1"
+
+
+                android:textDirection="locale"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:id="@+id/cover"
+                style="@style/CustomEditText"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+      android:gravity="center"
+                android:maxLength="25"
+                android:maxLines="1"
+                android:editable="false"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:text="@string/cover"
+                android:drawableRight="@drawable/rightarrow"
+                android:singleLine="true"
+                android:textDirection="locale" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Text.Headline"
+    android:textColor="@color/black"
+    android:text="0.00 QAR"
+    android:textStyle="bold"
+    android:textSize="@dimen/margin_20"
+    android:id="@+id/amounttext"
+    android:gravity="center"
+    android:layout_margin="@dimen/margin_10"
+    >
+
+</TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/subitBtn"
+            android:layout_marginTop="15dp"
+            style="@style/Common_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"/>
+
+    </LinearLayout>
+</LinearLayout>

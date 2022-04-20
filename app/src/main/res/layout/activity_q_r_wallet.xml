@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipeLyt"
+
+    tools:context=".Views.home.ProfileSubActivities.QRWalletActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/appColor"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolBarTheme.ToolBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/appColor"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/back"
+                android:gravity="center_vertical"
+                android:text="@string/qrwallet"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/appColor"
+            android:weightSum="1"
+            android:layout_marginTop="10dp">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:weightSum="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/customwallet">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.4"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/walletquality"
+                        android:layout_weight="0.2"/>
+
+                    <TextView
+                        android:id="@+id/walletBalance"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:textSize="24dp"
+                        android:singleLine="true"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+
+                    android:text="@string/availablebalance"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:textColor="@color/white"
+                    android:textSize="24dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.4"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_margin="10dp"
+                    android:padding="4dp">
+
+                    <Button
+                        android:id="@+id/topup"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.45"
+                        android:background="@drawable/whiteborderbutton"
+                        android:drawableLeft="@drawable/pluserr"
+                        android:padding="4dp"
+                        android:text="@string/addMoney"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"/>
+
+                    <Button
+                        android:padding="4dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.45"
+                        android:textColor="@color/white"
+                        android:drawableLeft="@drawable/downcolorfixx"
+                        android:text="@string/withdraw"
+                        android:background="@drawable/whiteborderbutton"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@color/extralightwhite">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/whitetext_bg">
+
+                    <ImageView
+                        android:id="@+id/managecardsimg"
+                        android:layout_weight="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:layout_marginLeft= "10dp"
+                        android:src="@drawable/ic_credit_card"/>
+
+                    <TextView
+                        android:id="@+id/managecards"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:text="@string/managecards"
+                        android:textColor="@color/black"
+                        style="@style/CustomText"
+                        android:gravity="center"
+                        android:textAlignment="textStart"
+                        tools:ignore="RtlCompat" />
+
+                    <ImageView
+                        android:id="@+id/managecardsarrow"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.1"
+                        android:padding="2dp"
+                        android:src="@drawable/rightarrow" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:background="@drawable/whitetext_bg"
+                    android:layout_margin="10dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/transactionhistoryimg"
+                        android:layout_weight="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:layout_marginLeft= "10dp"
+                        android:src="@drawable/ic_transaction"/>
+
+                    <TextView
+                        android:id="@+id/transactionhistory"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:text="@string/transactionshistory"
+                        android:textColor="@color/black"
+                        style="@style/CustomText"
+                        android:gravity="center"
+                        android:textAlignment="textStart"
+                        tools:ignore="RtlCompat" />
+
+                    <ImageView
+                        android:id="@+id/transactionhistoryimgarrow"
+                        android:layout_weight="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="2dp"
+                        android:layout_marginLeft= "10dp"
+                        android:src="@drawable/rightarrow"
+                        android:background="@drawable/whitetext_bg"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:background="@drawable/whitetext_bg"
+                    android:layout_margin="10dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/paymentprivacyimg"
+                        android:layout_weight="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:layout_marginLeft= "10dp"
+                        android:src="@drawable/ic_payment_privacy"/>
+
+                    <TextView
+                        android:id="@+id/paymentprivacy"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:text="@string/paymentprivacy"
+                        android:textColor="@color/black"
+                        style="@style/CustomText"
+                        android:gravity="center"
+                        android:textAlignment="textStart"
+                        tools:ignore="RtlCompat" />
+
+                    <ImageView
+                        android:id="@+id/paymentprivacyarrow"
+                        android:layout_weight="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="2dp"
+                        android:layout_marginLeft= "10dp"
+                        android:src="@drawable/rightarrow"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:background="@drawable/whitetext_bg"
+                    android:layout_margin="10dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/helpcenterimg"
+                        android:layout_weight="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:layout_marginLeft= "10dp"
+                        android:src="@drawable/ic_help"/>
+
+                    <TextView
+                        android:id="@+id/helpcenter"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:text="@string/helpcenter"
+                        android:textColor="@color/black"
+                        style="@style/CustomText"
+                        android:gravity="center"
+                        android:textAlignment="textStart"
+                        tools:ignore="RtlCompat" />
+
+                    <ImageView
+                        android:id="@+id/helpcenterarrow"
+                        android:layout_weight="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="2dp"
+                        android:layout_marginLeft= "10dp"
+                        android:src="@drawable/rightarrow"/>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

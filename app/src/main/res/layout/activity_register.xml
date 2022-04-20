@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+
+    tools:context=".Views.account.RegisterActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/register"
+
+        android:textColor="@color/appColor"
+        android:textSize="35dp"
+        android:textAlignment="textStart"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/createyouraccount"
+        android:textColor="@color/black"
+
+        android:textSize="15dp"
+        android:textAlignment="textStart"/>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userImg"
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_cameraround"
+                    android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/appColor"
+            android:text="@string/uploadyourpic"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="@string/name"
+            android:gravity="bottom"
+            android:paddingTop="4dp"
+            android:clipToPadding="false"
+            android:textColorHint="@color/black">
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/name_et"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz0123456789"
+        android:inputType="text"
+        android:minEms="4"
+        style="@style/CustomEditText"
+        android:maxLength="25"
+        android:maxLines="1"
+        android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="@string/region"
+        android:gravity="bottom"
+        android:paddingTop="4dp"
+        android:clipToPadding="false"
+        android:textColorHint="@color/black">
+
+    <AutoCompleteTextView
+        style="@style/CustomEditText"
+        android:id="@+id/region_et"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:maxLength="25"
+        android:paddingStart="10dp"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="bottom"
+        android:paddingTop="4dp"
+        android:clipToPadding="false"
+        android:hint="@string/number"
+        android:textColorHint="@color/black">
+
+    <EditText
+        style="@style/CustomEditText"
+        android:id="@+id/number_et"
+        android:paddingStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:inputType="number"
+        android:maxLength="15" />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:weightSum="1">
+
+        <CheckBox
+            android:id="@+id/termsandconditions"
+            android:layout_weight="0.1"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/hyperlink"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text="@string/hyperlink"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/registerBtn"
+        style="@style/Common_Button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/register"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:layout_marginBottom="5dp"
+        android:gravity="bottom|center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="18dp"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/black"
+            android:text="@string/dohaveanaccount" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/signin"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:gravity="right"
+            android:textColor="@color/appColor"
+            android:textSize="18dp"
+            android:text="@string/signin"/>
+    </LinearLayout>
+
+
+</LinearLayout>

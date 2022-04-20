@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="text_size_20">16sp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+    <dimen name="text_size_">16sp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="album_title_padding">8dp</dimen>
+    <dimen name="album_title">14sp</dimen>
+    <dimen name="songs_count_padding_bottom">5dp</dimen>
+    <dimen name="songs_count">12dp</dimen>
+    <dimen name="ic_album_overflow_width">20dp</dimen>
+    <dimen name="ic_album_overflow_height">30dp</dimen>
+
+    <dimen name="_16">18dp</dimen>
+    <dimen name="_8dp">8dp</dimen>
+    <!--      fonts Diments for whole app -->
+
+    <dimen name="font_small">13dp</dimen>
+    <dimen name="font_reguler">16dp</dimen>
+
+
+    <!--    Home Image-->
+
+    <dimen name="img_width">40dp</dimen>
+    <dimen name="img_height">40dp</dimen>
+
+
+    <!--    home layout height-->
+
+    <dimen name="home_View_lyt_height">80dp</dimen>
+    <dimen name="radius_bottom">900dp</dimen>
+    <dimen name="bottom_400">400dp</dimen>
+    <dimen name="hight_1000">1000dp</dimen>
+    <dimen name="_6dp">6dp</dimen>
+    <dimen name="_3dp">3dp</dimen>
+    <dimen name="_60dp">60dp</dimen>
+    <dimen name="_2dp">2dp</dimen>
+    <dimen name="_150dp">150dp</dimen>
+    <dimen name="_80dp">80dp</dimen>
+    <dimen name="_130dp">130dp</dimen>
+    <dimen name="_10sp">10sp</dimen>
+    <dimen name="_14dp">14dp</dimen>
+    <dimen name="_100dp">100dp</dimen>
+    <dimen name="_30dp">30dp</dimen>
+    <dimen name="_400dp">403dp</dimen>
+    <dimen name="_40dp">40dp</dimen>
+    <dimen name="_500dp">480dp</dimen>
+    <dimen name="_550dp">550dp</dimen>
+    <dimen name="_600dp">600dp</dimen>
+    <dimen name="_450dp">420dp</dimen>
+
+    <dimen name="_24dp">24dp</dimen>
+    <dimen name="_18dp">18dp</dimen>
+    <dimen name="_200dp">200dp</dimen>
+    <dimen name="_45dp">45dp</dimen>
+    <dimen name="_16dp">16dp</dimen>
+    <dimen name="_170dp">170dp</dimen>
+    <dimen name="_177dp">180dp</dimen>
+    <dimen name="_50dp">40dp</dimen>
+    <dimen name="margin_25">25dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="thumbnail">40dp</dimen>
+    <dimen name="row_padding">10dp</dimen>
+    <dimen name="contact_name">18dp</dimen>
+    <dimen name="contact_number">14dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+</resources>

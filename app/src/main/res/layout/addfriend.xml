@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    android:padding="10dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/addfriends"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/appColor"/>
+
+    <LinearLayout
+        android:id="@+id/haveownvehicle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative1"
+        android:orientation="vertical"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:hint="@string/nickname"
+                android:gravity="bottom"
+                android:paddingTop="4dp"
+                android:clipToPadding="false"
+                android:textColorHint="@color/black">
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingStart="10dp"
+                    android:inputType="text"
+                    style="@style/CustomEditText"
+                    android:maxLength="25"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/submit"
+            style="@style/Common_Button"/>
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            style="@style/Common_Button"
+            android:text="@string/cancel"/>
+
+    </LinearLayout>
+
+</LinearLayout>

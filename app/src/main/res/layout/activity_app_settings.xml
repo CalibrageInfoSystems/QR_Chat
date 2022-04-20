@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/extralightwhite"
+    tools:context=".Views.home.ProfileSubActivities.AppSettings">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolBarTheme.ToolBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/appColor"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+          >
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginRight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/back"
+                android:text="@string/appsettings"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/selectlanguagelayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:padding="4dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/languageimage"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="1dp"
+            android:layout_marginLeft= "10dp"
+            android:src="@drawable/ic_translation"/>
+
+        <TextView
+            style="@style/CustomText"
+            android:id="@+id/phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:text="@string/Language"
+            android:textColor="@color/black"
+            android:gravity="center"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            style="@style/CustomText"
+            android:id="@+id/phonenumber"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:text="@string/languages"
+            android:textColor="@color/light_gray"
+            android:gravity="center"
+            android:textAlignment="textEnd"
+            tools:ignore="RtlCompat" />
+
+        <ImageView
+            android:id="@+id/rightarrow1"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:padding="6dp"
+            android:layout_height="match_parent"
+            android:rotation="180"
+            android:src="@drawable/arrow_left_black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:padding="4dp"
+
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/textsizeimage"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="1dp"
+            android:layout_marginLeft= "10dp"
+            android:src="@drawable/textsizze"
+            />
+
+        <TextView
+            style="@style/CustomText"
+            android:id="@+id/qrchatid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:text="@string/textsize"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textAlignment="textStart"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            style="@style/CustomText"
+            android:id="@+id/qrchatidnumber"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:text="@string/medium"
+            android:textColor="@color/light_gray"
+            android:gravity="center"
+            android:textAlignment="textEnd"
+            tools:ignore="RtlCompat" />
+
+        <ImageView
+            android:id="@+id/rightarrow2"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:padding="6dp"
+            android:layout_height="match_parent"
+            android:rotation="180"
+            android:src="@drawable/arrow_left_black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="4dp"
+
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/dataimage"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="1dp"
+            android:layout_marginLeft= "10dp"
+            android:src="@drawable/datausage"/>
+
+        <TextView
+            android:layout_weight="0.8"
+            style="@style/CustomText"
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/datausage"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textAlignment="textStart"
+            tools:ignore="RtlCompat" />
+
+        <ImageView
+            android:id="@+id/rightarrow3"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:padding="6dp"
+            android:layout_height="match_parent"
+            android:rotation="180"
+            android:src="@drawable/arrow_left_black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="4dp"
+
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/autodownloadimage"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="1dp"
+            android:layout_marginLeft= "10dp"
+            android:src="@drawable/autodownload"/>
+
+        <TextView
+            android:layout_weight="0.8"
+            style="@style/CustomText"
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/autodownload"
+            android:textColor="@color/black"
+            android:gravity="center"
+            tools:ignore="RtlCompat"
+            />
+
+        <ImageView
+            android:id="@+id/rightarrow4"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:padding="6dp"
+            android:layout_height="match_parent"
+            android:rotation="180"
+            android:src="@drawable/arrow_left_black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="4dp"
+
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/themeimage"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="1dp"
+            android:layout_marginLeft= "10dp"
+            android:src="@drawable/theme"/>
+
+        <TextView
+            android:layout_weight="0.8"
+            style="@style/CustomText"
+            android:id="@+id/facebook"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/theme"
+            android:textColor="@color/black"
+            android:gravity="center"
+            tools:ignore="RtlCompat"
+            />
+
+        <ImageView
+            android:id="@+id/rightarrow5"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:padding="6dp"
+            android:layout_height="match_parent"
+            android:rotation="180"
+            android:src="@drawable/arrow_left_black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="4dp"
+
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/managestorageimg"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="1dp"
+            android:layout_marginLeft= "10dp"
+            android:src="@drawable/managestorage"/>
+
+        <TextView
+            android:layout_weight="0.8"
+            style="@style/CustomText"
+            android:id="@+id/instagram"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/managestorage"
+            android:textColor="@color/black"
+            android:gravity="center"
+            tools:ignore="RtlCompat"
+            />
+
+        <ImageView
+            android:id="@+id/rightarrow6"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:padding="6dp"
+            android:layout_height="match_parent"
+            android:rotation="180"
+            android:src="@drawable/arrow_left_black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="4dp"
+
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/securityImg"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="1dp"
+            android:layout_marginLeft= "10dp"
+            android:src="@drawable/security"/>
+
+        <TextView
+            android:layout_weight="0.8"
+            style="@style/CustomText"
+            android:id="@+id/loggeddevices"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/security"
+            android:textColor="@color/black"
+            android:gravity="center"
+            tools:ignore="RtlCompat"
+            />
+
+        <ImageView
+            android:id="@+id/rightarrow7"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:padding="6dp"
+            android:layout_height="match_parent"
+            android:rotation="180"
+            android:src="@drawable/arrow_left_black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="4dp"
+
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/permissionsimage"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="1dp"
+            android:layout_marginLeft= "10dp"
+            android:src="@drawable/permission"/>
+
+        <TextView
+            style="@style/CustomText"
+            android:id="@+id/switchAccount"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/apppermissions"
+            android:textColor="@color/black"
+            android:gravity="center"
+            tools:ignore="RtlCompat"
+            />
+
+        <ImageView
+            android:id="@+id/rightarrow8"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:padding="6dp"
+            android:layout_height="match_parent"
+            android:rotation="180"
+            android:src="@drawable/arrow_left_black"/>
+
+    </LinearLayout>
+
+</LinearLayout>

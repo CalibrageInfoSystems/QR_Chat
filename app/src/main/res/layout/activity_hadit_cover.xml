@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+
+
+    tools:context=".Views.home.HaditCoverActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolBarTheme.ToolBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/appColor"
+        android:visibility="visible"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+            <TextView
+
+                android:textStyle="bold"
+                style="@style/Text"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/back"
+                android:text="@string/hadiatcover"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_80dp"
+        android:background="@drawable/hadit_bg"
+     >
+    <LinearLayout
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_below="@+id/lyt_qr"
+        android:layout_width="250dp"
+        android:layout_height="@dimen/_500dp"
+        android:layout_gravity="center"
+android:orientation="vertical"
+
+     >
+
+        <LinearLayout
+            android:id="@+id/imglogoo"
+android:orientation="vertical"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/_50dp"
+            android:background="@drawable/red_bg"
+            android:src="@drawable/logo">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+android:layout_marginLeft="@dimen/_50dp"
+            android:layout_marginRight="@dimen/_50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_user">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+
+        <TextView
+            android:id="@+id/displayName"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="16dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:textColor="@color/appColor"
+            android:text="@string/displayName"/>
+
+            <TextView
+                android:id="@+id/bestwishes"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="16dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:textColor="@color/appColor"
+                android:text="@string/Bestwishes"/>
+
+            <Button
+                android:id="@+id/btn_open"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="@dimen/_100dp"
+                android:background="@drawable/button_states"
+                android:text="@string/open"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/dgfg"-->
+<!--            android:orientation="vertical"-->
+
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:padding="@dimen/margin_10"-->
+<!--            android:layout_marginBottom="@dimen/_50dp"-->
+<!--            android:background="@drawable/red_bg"-->
+<!--            android:src="@drawable/logo">-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/displaName"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:textSize="16dp"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textColor="@color/appColor"-->
+<!--                android:text="@string/displayName"/>-->
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/defaultname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:text="@string/difault"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+</LinearLayout>
+</LinearLayout>
+

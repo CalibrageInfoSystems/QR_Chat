@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/grp1">
+    <item
+        android:id="@+id/action_newchat"
+        android:enabled="true"
+        android:icon="@drawable/ic_new_chat"
+        android:title="@string/newchat"
+        android:actionLayout="@layout/cart_update_count"
+        app:showAsAction="ifRoom"
+        app:itemTextColor="@color/half_black2"/>
+    </group>
+    <group android:id="@+id/grp2">
+    <item
+        android:id="@+id/action_Addfriend"
+        android:enabled="true"
+        android:title="@string/addfriends"
+        android:actionLayout="@layout/cart_update_count"
+        android:icon="@drawable/ic_add_friend"
+        app:itemTextColor="@color/half_black2"
+        app:showAsAction="ifRoom"/>
+    </group>
+    <group android:id="@+id/grp3">
+    <item
+        android:id="@+id/action_creategroup"
+        android:enabled="true"
+        android:title="@string/creatgroup"
+        app:itemTextColor="@color/half_black2"
+        android:icon="@drawable/ic_create_group"
+        android:actionLayout="@layout/cart_update_count"
+        app:showAsAction="ifRoom"/>
+    </group>
+    <group android:id="@+id/grp4">
+    <item
+        android:id="@+id/action_scan"
+        android:enabled="true"
+        android:title="@string/scan"
+        android:icon="@drawable/ic_scan"
+        app:itemTextColor="@color/half_black2"
+        android:actionLayout="@layout/cart_update_count"
+        app:showAsAction="ifRoom"/>
+    </group>
+    <item
+        android:id="@+id/action_qrcare"
+        android:enabled="true"
+        android:actionLayout="@layout/cart_update_count"
+        android:title="@string/qrcare"
+        android:icon="@drawable/ic_qr_care"
+        app:itemTextColor="@color/half_black2"
+        app:showAsAction="ifRoom"/>
+
+
+
+</menu>

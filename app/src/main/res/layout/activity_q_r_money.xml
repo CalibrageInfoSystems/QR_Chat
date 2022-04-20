@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/extralightwhite"
+    tools:context=".Views.home.ProfileSubActivities.QRMoneyActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolBarTheme.ToolBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/appColor"
+        android:visibility="visible"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+            <TextView
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/back"
+                android:text="@string/qrmoney"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.5">
+
+        <ImageView
+            android:paddingLeft="@dimen/_50dp"
+            android:paddingRight="@dimen/_50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/barcode"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/qrmoneyImg"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:background="@drawable/whitetext_bg"
+            android:src="@drawable/qrcodetransparent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.65"
+            android:padding="0dp"/>
+
+            <TextView
+                android:layout_weight="0.15"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/payfrom"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:textAlignment="center"/>
+
+            <RelativeLayout
+                android:paddingLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="6dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spinner_bg"
+                android:elevation="2dp">
+
+                <Spinner
+                    android:textAlignment="center"
+                    android:id="@+id/spinnerbank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="-1dp"
+                    android:background="@null"
+                    android:minHeight="0dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:padding="@dimen/_8dp"
+                    android:src="@drawable/down_arrow24" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:layout_weight="0.5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@drawable/gray_bg">
+
+        <LinearLayout
+            android:id="@+id/receivemoney"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="4dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/whitetext_bg"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.1"
+                android:padding="1dp"
+                android:src="@drawable/ic_receive_money" />
+
+            <TextView
+                android:layout_weight="0.8"
+                style="@style/CustomText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/receiveMoney"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                tools:ignore="RtlCompat"
+                />
+
+
+            <ImageView
+                android:layout_weight="0.1"
+                android:layout_width="0dp"
+                android:padding="6dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_shevron_right"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/sendMoneytoBank"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="4dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/whitetext_bg"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.1"
+                android:padding="1dp"
+                android:src="@drawable/ic_send_to_bank" />
+
+            <TextView
+                android:layout_weight="0.8"
+                style="@style/CustomText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/sendtobankAccount"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                tools:ignore="RtlCompat"
+                />
+
+
+            <ImageView
+                android:layout_weight="0.1"
+                android:layout_width="0dp"
+                android:padding="6dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_shevron_right"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/payforCreditcard"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="4dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/whitetext_bg"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.1"
+                android:padding="1dp"
+                android:src="@drawable/ic_pay_credit_card" />
+
+            <TextView
+                android:layout_weight="0.8"
+                style="@style/CustomText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/payforcreditcard"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                tools:ignore="RtlCompat"
+                />
+
+
+            <ImageView
+                android:layout_weight="0.1"
+                android:layout_width="0dp"
+                android:padding="6dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_shevron_right"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/payforqatarcharity"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="4dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/whitetext_bg"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.1"
+                android:padding="1dp"
+                android:src="@drawable/ic_charity" />
+
+            <TextView
+                android:layout_weight="0.8"
+                style="@style/CustomText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/payforqatarcharity"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                tools:ignore="RtlCompat"
+                />
+
+
+            <ImageView
+                android:layout_weight="0.1"
+                android:layout_width="0dp"
+                android:padding="6dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_shevron_right"/>
+
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="4dp"
+            android:id="@+id/paywithqrcode"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/whitetext_bg"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.1"
+            android:padding="1dp"
+            android:src="@drawable/ic_qrcode" />
+
+        <TextView
+            android:layout_weight="0.8"
+            style="@style/CustomText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/paythroughqrcode"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textAlignment="textStart"
+            tools:ignore="RtlCompat"
+            />
+
+
+        <ImageView
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:padding="6dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_shevron_right"/>
+
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

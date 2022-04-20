@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/camera"
+        android:title="@string/Camera"
+        android:icon="@drawable/ic_camera_round" />
+    <item
+        android:id="@+id/voicecall"
+        android:title="@string/voicecall"
+        android:icon="@drawable/ic_voice_call_round" />
+    <item
+        android:id="@+id/videocall"
+        android:title="@string/vediocall"
+        android:icon="@drawable/ic_video_call_round" />
+
+    <item
+        android:id="@+id/location"
+        android:title="@string/location"
+        android:icon="@drawable/ic_location_round" />
+    <item
+        android:id="@+id/gallery"
+        android:title="@string/gallery"
+        android:icon="@drawable/ic_gallery_rounded" />
+    <item
+        android:id="@+id/tranfer"
+        android:title="@string/transFer"
+        android:icon="@drawable/ic_transfer_rounded" />
+    <item
+        android:id="@+id/contacts"
+        android:title="@string/contacts"
+        android:icon="@drawable/ic_contact_rounded" />
+    <item
+        android:id="@+id/action_hadiatmoney"
+        android:title="@string/hadiatmoney"
+
+        android:icon="@drawable/ic_hadiyat_rounded" />
+</menu>

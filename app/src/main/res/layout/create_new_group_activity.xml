@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="5dp"
+    android:weightSum="1"
+    android:background="@color/extralightwhite"
+    tools:context=".SplitMoney.CreateNewGroupActivity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/createNewGroupToolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:padding="10dp"
+        android:layout_margin="10dp">
+
+    <EditText
+        android:id="@+id/createNewGroupName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/entergroupname"
+        android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="10dp">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:id="@+id/contactsrecyclerView">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/no_data"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/nochat"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/margin_20" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

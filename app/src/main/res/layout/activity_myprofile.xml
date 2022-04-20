@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".Views.home.myprofile">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolBarTheme.ToolBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/appColor"
+        android:visibility="visible"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/back"
+                android:text="@string/myprofile"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/margin_5"
+            android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/img"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_user" />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/appColor"
+            android:text="@string/uploadyourpic"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="@string/name"
+            android:gravity="bottom"
+            android:paddingTop="4dp"
+            android:clipToPadding="false"
+            android:textColorHint="@color/black">
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/name_et"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+                style="@style/CustomEditText"
+                android:maxLength="25"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="@string/email"
+            android:gravity="bottom"
+            android:paddingTop="4dp"
+            android:clipToPadding="false"
+            android:textColorHint="@color/black">
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/email_et"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+                style="@style/CustomEditText"
+                android:maxLength="25"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="@string/region"
+            android:gravity="bottom"
+            android:paddingTop="4dp"
+            android:clipToPadding="false"
+            android:textColorHint="@color/black">
+
+            <AutoCompleteTextView
+                style="@style/CustomEditText"
+                android:id="@+id/region_et"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:maxLength="25"
+                android:paddingStart="10dp"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="bottom"
+            android:paddingTop="4dp"
+            android:clipToPadding="false"
+            android:hint="@string/number"
+            android:textColorHint="@color/black">
+
+            <EditText
+                style="@style/CustomEditText"
+                android:id="@+id/number_et"
+                android:paddingStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="number"
+                android:maxLength="10" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="@string/status"
+            android:gravity="bottom"
+            android:paddingTop="4dp"
+            android:clipToPadding="false"
+            android:textColorHint="@color/black">
+
+            <EditText
+                android:id="@+id/status_et"
+                style="@style/CustomEditText"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+android:inputType="text"
+                android:layout_marginTop="10dp"
+                android:maxLength="25"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            style="@style/CustomText"
+
+            android:text="@string/gender"
+android:textColor="@color/black"
+            android:textSize="@dimen/album_title" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/margin_5"
+android:layout_marginRight="@dimen/margin_5"
+            android:background="@drawable/edittextbg"
+            android:elevation="2dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:padding="@dimen/_8dp"
+                android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+
+            <Spinner
+                android:id="@+id/gendertype"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:minHeight="0dp"
+                android:layout_marginLeft="@dimen/margin_10" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:hint="@string/location"
+                    android:gravity="bottom"
+                    android:paddingTop="4dp"
+                    android:clipToPadding="false"
+                    android:textColorHint="@color/black">
+
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/location_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+
+                        style="@style/CustomEditText"
+                        android:maxLength="25"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/updateBtn"
+                style="@style/Common_Button"
+                android:layout_margin="@dimen/margin_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/updateprofile"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

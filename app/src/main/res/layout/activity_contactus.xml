@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.home.Contactus">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolBarTheme.ToolBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/appColor"
+        android:visibility="visible">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_weight="0.8"
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_marginEnd="40dp"
+                android:layout_height="match_parent"
+                android:text="@string/contactus"
+                style="@style/Text"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/margin_20"
+                android:fontFamily="@font/varela_regular"
+                android:id="@+id/toolbar_title" />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_margin="10dp"
+       android:background="@drawable/whitetext_bg">
+
+       <EditText
+           android:id="@+id/fullname"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:hint="@string/fullname"
+           android:layout_margin="10dp"
+           android:textColor="@color/black"
+           style="@style/CustomEditText"/>
+
+       <EditText
+           android:id="@+id/contactemail"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:hint="@string/email"
+           android:layout_margin="10dp"
+           android:textColor="@color/black"
+           style="@style/CustomEditText"/>
+
+       <EditText
+           android:id="@+id/reasonforcontact"
+           android:layout_width="match_parent"
+           android:layout_height="100dp"
+           android:layout_margin="10dp"
+           android:hint="@string/breifmessage"
+           android:textColor="@color/black"
+           style="@style/CustomRectEditText"/>
+
+       <Button
+           android:id="@+id/send"
+           android:layout_margin="10dp"
+           android:layout_gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           style="@style/Common_Button"
+           android:text="@string/Send"/>
+
+   </LinearLayout>
+
+
+</LinearLayout>

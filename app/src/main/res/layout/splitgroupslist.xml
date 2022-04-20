@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="7dp">
+
+        <LinearLayout
+            android:background="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:id="@+id/groupview"
+            >
+
+        <LinearLayout
+            android:layout_weight="0.7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.7"
+                    android:weightSum="1">
+
+                        <TextView
+                            android:layout_weight="0.4"
+                            android:id="@+id/groupName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:text="Group A"
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="0.6"
+                            android:id="@+id/spentamount"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:text="12,280"
+                            android:textStyle="bold"
+                            android:textColor="@color/appColor"
+                            android:textSize="30dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="0.3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    android:gravity="right">
+
+                        <TextView
+                            android:id="@+id/createdon"
+                            android:layout_weight="0.5"
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:text="@string/createdOn"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:id="@+id/groupcreatedDate"
+                            android:layout_weight="0.5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:text="Today"
+                            android:textStyle="bold"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"/>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="0.3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:weightSum="1"
+                    android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_splitmoney"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="3070"
+                            android:layout_weight="1.0"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"/>
+
+
+<!--                        <Button-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="0.2"-->
+<!--                            style="@style/Common_Button"-->
+<!--                            android:id="@+id/pay"-->
+<!--                            android:text="Pay"/>-->
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>

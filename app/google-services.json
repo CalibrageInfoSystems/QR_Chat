@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "280798829263",
+    "project_id": "qrchat-5e9d4",
+    "storage_bucket": "qrchat-5e9d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280798829263:android:7b35b99e49542cdab535ba",
+        "android_client_info": {
+          "package_name": "com.cis.qrchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280798829263-6i04a08urbdsqcsfmhq2gv95589dthu6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cis.qrchat",
+            "certificate_hash": "0d749a5df655b296081702d9252d2406ad0f4043"
+          }
+        },
+        {
+          "client_id": "280798829263-q8e9nurd9stse3pvgajhhdug880t99u3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cis.qrchat",
+            "certificate_hash": "45c6cbf3c42312e4011f2db6612a6057b5443704"
+          }
+        },
+        {
+          "client_id": "280798829263-q3qm9sk566sa1ibmtlhvbrc7dhpaot6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2p6PZ9FqAswgOIUCxCMZZ-JxtRCIVR3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280798829263-q3qm9sk566sa1ibmtlhvbrc7dhpaot6l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

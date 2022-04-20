@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/grp1" >
+    <item
+        android:id="@+id/lastseen"
+        android:title="@string/lastseen"
+        android:icon="@drawable/ic_camera" />
+    </group>
+    <group android:id="@+id/grp2" >
+    <item
+        android:id="@+id/profilephoto"
+        android:title="@string/profilephoto"
+        android:icon="@drawable/ic_voice_call" />
+    </group>
+    <group android:id="@+id/grp3" >
+    <item
+        android:id="@+id/about"
+        android:title="@string/about"
+        android:icon="@drawable/ic_video_call" />
+    </group>
+    <group android:id="@+id/grp4" >
+    <item
+        android:id="@+id/groups"
+        android:title="@string/groups"
+        android:icon="@drawable/ic_location" />
+    </group>
+
+    <group android:id="@+id/grp5" >
+        <item
+            android:id="@+id/livelocation"
+            android:title="@string/livelocation"
+            android:icon="@drawable/ic_location" />
+    </group>
+
+</menu>

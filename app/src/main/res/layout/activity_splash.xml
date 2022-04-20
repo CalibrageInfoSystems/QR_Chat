@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/extralightwhite"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:padding="@dimen/_50dp"
+ android:layout_marginBottom="@dimen/margin_20"
+    android:layout_marginTop="@dimen/margin_20"
+    tools:context=".Views.splashScreen.SplashActivity">
+
+ <LinearLayout
+
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     android:layout_weight="0.5"
+     android:gravity="center"
+
+     android:layout_gravity="center"
+     android:background="@color/extralightwhite">
+
+  <ImageView
+      android:padding="40dp"
+      android:id="@+id/imglogo"
+      android:src="@drawable/fifa_world"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+
+ </LinearLayout>
+
+ <LinearLayout
+     android:layout_marginTop="@dimen/margin_20"
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+
+
+     android:layout_weight="0.5"
+     android:orientation="vertical"
+     android:background="@drawable/bg_countdown">
+
+ <LinearLayout
+     android:layout_centerHorizontal="true"
+     android:id="@+id/daysview"
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+  <TextView
+      android:layout_marginTop="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:text="COUNTDOWN STARTS"
+      android:textColor="@color/appColor"
+      android:textStyle="bold"
+      android:textSize="24dp"
+      android:textAlignment="center"/>
+
+  <LinearLayout
+      android:layout_marginTop="10dp"
+      android:layout_width="120dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:orientation="vertical"
+      android:weightSum="1"
+      android:background="@drawable/customcountdown">
+
+   <TextView
+       android:fontFamily="@font/varela_regular"
+       android:layout_weight="0.7"
+       android:textAlignment="center"
+       android:textSize="50dp"
+       android:textColor="@color/white"
+       android:id="@+id/daysLeft"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_gravity="center"
+       />
+
+   <TextView
+       android:fontFamily="@font/varela_regular"
+       android:layout_margin="4dp"
+       android:layout_gravity="center"
+       android:layout_weight="0.3"
+       style="@style/CustomText"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:text="Days"
+       android:textAlignment="center"
+       />
+
+
+  </LinearLayout>
+
+
+
+  <LinearLayout
+     android:gravity="center"
+      android:weightSum="1"
+      android:layout_marginTop="10dp"
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+
+  <LinearLayout
+      android:layout_margin="4dp"
+      android:orientation="vertical"
+      android:layout_weight="0.33"
+      android:layout_width="0dp"
+      android:weightSum="1"
+      android:layout_height="wrap_content"
+      android:background="@drawable/customcountdown">
+
+   <TextView
+       android:fontFamily="@font/varela_regular"
+       android:layout_weight="0.7"
+       android:id="@+id/hrsLeft"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:textAlignment="center"
+       android:textColor="@color/white"
+       android:textSize="50dp"
+       android:layout_gravity="center" />
+   <TextView
+       android:fontFamily="@font/varela_regular"
+       android:layout_weight="0.3"
+       style="@style/CustomText"
+       android:textAlignment="center"
+       android:text="  Hours "
+       android:layout_width="match_parent"
+       android:layout_height="0dp"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_margin="4dp"
+      android:gravity="center"
+      android:layout_weight="0.33"
+      android:orientation="vertical"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:weightSum="1"
+      android:background="@drawable/customcountdown">
+   <TextView
+       android:fontFamily="@font/varela_regular"
+       android:layout_weight="0.7"
+       android:textAlignment="center"
+       android:textSize="50dp"
+       android:textColor="@color/white"
+       android:id="@+id/minLeft"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_gravity="center" />
+
+   <TextView
+       android:fontFamily="@font/varela_regular"
+       android:layout_weight="0.3"
+       style="@style/CustomText"
+       android:textAlignment="center"
+       android:text="Minutes"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_margin="4dp"
+      android:background="@drawable/customcountdown"
+      android:orientation="vertical"
+      android:layout_weight="0.33"
+      android:layout_width="0dp"
+      android:weightSum="1"
+      android:layout_height="wrap_content">
+   <TextView
+       android:fontFamily="@font/varela_regular"
+       android:layout_weight="0.7"
+       android:textAlignment="center"
+       android:textSize="50dp"
+       android:textColor="@color/white"
+       android:id="@+id/secLeft"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_gravity="center" />
+   <TextView
+       android:fontFamily="@font/varela_regular"
+       android:layout_weight="0.3"
+       style="@style/CustomText"
+       android:textAlignment="center"
+       android:text="Seconds"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"/>
+  </LinearLayout>
+ </LinearLayout>
+ </LinearLayout>
+ </LinearLayout>
+
+
+</LinearLayout>

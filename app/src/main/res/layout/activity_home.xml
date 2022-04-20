@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/semi_white"
+
+    tools:context="com.cis.qrchat.Views.home.HomeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolBarTheme.ToolBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:background="@color/appColor"
+        android:visibility="visible"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+          >
+
+            <TextView
+
+                                    android:layout_weight="1"
+                                    android:textColor="@color/white"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:text="Some Fancy Title"
+                                    style="@style/Text"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/margin_20"
+                                    android:layout_marginEnd="@dimen/margin_20"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/varela_regular"
+                                    android:id="@+id/toolbar_title" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+<!--            <androidx.appcompat.widget.Toolbar-->
+<!--                android:id="@+id/toolbar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="?attr/actionBarSize"-->
+<!--                android:background="@color/transparent"-->
+<!--                app:popupTheme="@style/AppTheme.PopupOverlay" >-->
+<!--                <LinearLayout-->
+<!--                    android:weightSum="1"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent">-->
+
+<!--                    <TextView-->
+
+<!--                        android:layout_weight="0.8"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Some Fancy Title"-->
+<!--                        style="@style/Text"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textSize="@dimen/margin_20"-->
+<!--                        android:gravity = "center"-->
+<!--                        android:fontFamily="@font/varela_regular"-->
+<!--                        android:id="@+id/toolbar_title" />-->
+<!--                    <TextView-->
+<!--                        android:layout_weight="0.2"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"/>-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.appcompat.widget.Toolbar>-->
+
+
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/coordinatorlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/semi_white"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               >
+
+            </FrameLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/qr_icon"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="35dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <com.cis.qrchat.common.CustomBottomNavigationView
+                android:id="@+id/customBottomBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/red"
+                app:itemTextColor="@color/light_gray"
+                app:labelVisibilityMode="labeled" />
+
+
+
+            <!--    </com.google.android.material.navigation.NavigationView>-->
+
+        </RelativeLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/half_black2"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/menu">
+    </com.google.android.material.navigation.NavigationView>
+</LinearLayout>
+

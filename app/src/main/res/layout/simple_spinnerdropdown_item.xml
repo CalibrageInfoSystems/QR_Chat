@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/text1"
+    android:gravity="left"
+    android:paddingLeft="5dp"
+    android:textAlignment="textStart"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:ellipsize="marquee"
+    android:fontFamily="@font/varela_regular"
+    android:background="@color/white"
+    android:textColor="@color/colorPrimary"
+    tools:ignore="RtlCompat" />

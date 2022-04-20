@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Views.account.AddFriendsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolBarTheme.ToolBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/appColor"
+
+        android:visibility="visible"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/back"
+                android:text="@string/addfriends"
+                android:textStyle="bold"
+                android:padding="@dimen/margin_5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:padding="@dimen/margin_5"
+android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="@dimen/_50dp"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@drawable/edittextbg"
+
+            android:padding="6dp"
+            android:orientation="horizontal"
+           >
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="wrap_content"
+        android:layout_weight="9"
+        android:layout_height="@dimen/_50dp"
+        android:layout_margin="@dimen/margin_5"
+        android:hint="@string/searchby"
+        android:inputType="number"
+        android:background="@color/transparent"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="13dp" />
+
+        <ImageButton
+            android:id="@+id/searchbutton"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:src="@android:drawable/ic_menu_search" />
+    </LinearLayout>
+        <ImageView
+
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:padding="6dp"
+        android:id="@+id/action_scan"
+        android:layout_margin="@dimen/_8dp"
+        android:src="@drawable/ic_qr_code_scan"
+        android:layout_weight="1">
+
+    </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/lineardata"
+android:padding="@dimen/margin_5"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5"
+
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/thumbnail"
+            android:fontFamily="sans-serif-medium"
+            android:text="Roja"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/contact_name" />
+
+
+            <TextView
+                android:id="@+id/mobilenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="Data.............................."
+                android:layout_toRightOf="@id/callicon"
+                android:textColor="@color/half_black2"
+                android:textSize="@dimen/contact_number" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="end"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/addfriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/Common_Button"
+            android:padding="@dimen/margin_10"
+            android:layout_gravity="center"
+            android:text="@string/add"
+            android:layout_toRightOf="@id/name"
+            android:textColor="@color/white"
+
+            android:textSize="@dimen/contact_number" />
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/invitelineardata"
+        android:padding="@dimen/margin_5"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+
+android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingLeft="6dp"
+android:layout_gravity="center"
+                android:paddingRight="6dp"
+                android:text="Data.............................."
+                android:layout_toRightOf="@id/callicon"
+                android:textColor="@color/black"
+                android:textSize="@dimen/contact_number" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="end"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/invitefriend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                style="@style/Common_Button"
+                android:padding="@dimen/margin_10"
+                android:layout_gravity="center"
+                android:text="@string/Invite"
+                android:layout_toRightOf="@id/name"
+                android:textColor="@color/white"
+
+                android:textSize="@dimen/contact_number" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/transparent"
+        android:padding="10dp"
+        android:id="@+id/nicknamelinear"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/addfriends"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/appColor"/>
+
+        <LinearLayout
+            android:id="@+id/haveownvehicle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative1"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:hint="@string/nickname"
+                    android:gravity="bottom"
+                    android:paddingTop="4dp"
+                    android:clipToPadding="false"
+                    android:textColorHint="@color/black">
+
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/nickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:paddingStart="10dp"
+                        android:inputType="text"
+                        style="@style/CustomEditText"
+                        android:maxLength="25"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/submit_btn"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/submit"
+                style="@style/Common_Button"/>
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                style="@style/Common_Button"
+                android:text="@string/cancel"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/nocontact"
+android:visibility="gone"
+        android:gravity="center"
+
+        android:text="@string/nocontactAvailable"
+        android:textColor="@color/colorPrimary"
+      />
+    </LinearLayout>
+
+
+

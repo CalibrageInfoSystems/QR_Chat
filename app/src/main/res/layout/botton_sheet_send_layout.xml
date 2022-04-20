@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_20"
+        android:text="@string/payusing"
+        android:textAlignment="textStart"
+        android:textColor="@color/appColor"
+        android:textSize="@dimen/_16dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_20"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:showDividers="beginning|middle|end"
+        android:layout_marginTop="10dp"
+        android:id="@+id/radioGroup" >
+
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bankaccount"
+            android:fontFamily="@font/varela_regular"
+           />
+        <LinearLayout
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+
+            >
+
+            <Spinner
+                android:layout_weight="0.2"
+                android:id="@+id/bankname"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:dropDownWidth="fill_parent"
+
+
+                />
+
+            <TextView
+                android:layout_weight="0.6"
+                android:id="@+id/nocardavailable"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:text="@string/Nocards"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_weight="0.2"
+
+                android:id="@+id/addcard"
+                android:layout_margin="5dp"
+                android:textColor="@color/appColor"
+                android:fontFamily="@font/varela_regular"
+
+                android:gravity="end"
+                android:layout_gravity="center"
+              android:textAlignment="textEnd"
+
+                android:text="@string/addcard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:fontFamily="@font/varela_regular"
+            android:text="@string/wallet" />
+    </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="200dp"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/margin_20"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+
+                android:fontFamily="@font/varela_regular"
+              android:id="@+id/walletbalance"
+                android:text="4444.67"
+                android:layout_marginStart="@dimen/_30dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+              android:textColor="@color/appColor"
+                android:fontFamily="@font/varela_regular"
+            android:textAlignment="textEnd"
+                android:text="@string/addMoney"
+                android:id="@+id/addmoney"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:minHeight="0dp"
+            android:padding="@dimen/margin_10"
+            android:text="@string/Sendmoney"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:minHeight="0dp"
+            android:padding="@dimen/margin_10"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

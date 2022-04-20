@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/grp1">
+    <item
+        android:id="@+id/action_sendmoney"
+        android:enabled="true"
+        android:icon="@drawable/ic_wallett_send"
+        android:title="@string/Sendmoney"
+
+        android:actionLayout="@layout/cart_update_count"
+        app:showAsAction="ifRoom"/>
+    </group>
+    <group android:id="@+id/grp2">
+    <item
+        android:id="@+id/action_recivemoney"
+        android:enabled="true"
+        android:title="@string/Recivemoney"
+        android:icon="@drawable/ic_wallett_receive"
+        android:actionLayout="@layout/cart_update_count"
+        app:showAsAction="ifRoom"/>
+    </group>
+    <group android:id="@+id/grp3">
+    <item
+        android:id="@+id/action_splitmoney"
+        android:enabled="true"
+        android:title="@string/spiltMoney"
+        android:icon="@drawable/ic_split_money"
+        android:actionLayout="@layout/cart_update_count"
+        app:showAsAction="ifRoom"/>
+    </group>
+    <group android:id="@+id/grp4">
+    <item
+        android:id="@+id/action_hadiatmoney"
+        android:enabled="true"
+        android:title="@string/hadiatmoney"
+        android:icon="@drawable/ic_hadiatt"
+        app:showAsAction="ifRoom"/>
+    </group>
+    <group android:id="@+id/grp5">
+    <item
+        android:id="@+id/action_transactions"
+        android:enabled="true"
+        android:actionLayout="@layout/cart_update_count"
+        android:title="@string/transactions"
+        android:icon="@drawable/ic_transactions"
+        app:showAsAction="ifRoom"/>
+    </group>
+
+
+
+</menu>

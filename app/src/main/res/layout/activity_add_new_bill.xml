@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="5dp"
+    tools:ignore="HardcodedText"
+    tools:context=".SplitMoney.AddEditBillActivity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/addBillToolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/addBillItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Item name"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/addBillItemCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Item cost"
+            android:inputType="numberDecimal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_weight="0.2"
+            android:id="@+id/addBillTextPaidBy"
+            android:layout_width="0dp"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="Paid by:"
+            android:textColor="@android:color/holo_orange_dark"/>
+
+        <RelativeLayout
+            android:layout_weight="0.8"
+            android:layout_height="40dp"
+            android:layout_width="0dp"
+            android:layout_margin="6dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner_bg"
+            android:elevation="2dp">
+
+
+            <Spinner
+                android:textAlignment="center"
+                android:id="@+id/addBillItemPaidBy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="-1dp"
+                android:background="@null"
+                android:minHeight="0dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:padding="@dimen/_8dp"
+                android:src="@drawable/down_arrow24" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:layout_margin="6dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_bg"
+        android:elevation="2dp">
+
+
+        <com.cis.qrchat.common.MultiSelectionSpinner
+            android:textAlignment="center"
+            android:id="@+id/contactspinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="-1dp"
+            android:background="@null"
+            android:minHeight="0dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/_8dp"
+            android:src="@drawable/down_arrow24" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/participantsrecyclerview"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_group_channel"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme"
+            app:titleTextColor="@color/white"
+android:visibility="gone"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/Theme.AppCompat.Light">
+        </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:gravity=""
+                >
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.03"
+                    android:src="@drawable/arrow_left" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+
+
+                    android:id="@+id/profile"
+
+                    android:layout_width="30dp"
+
+
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/margin_10"
+                    android:background="@drawable/circlewhite_bg"
+                    android:src="@drawable/ic_user" />
+                <TextView
+
+                    android:gravity="center_vertical"
+                    android:layout_weight="0.67"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    style="@style/Text"
+                    android:layout_toRightOf="@+id/back"
+                    android:id="@+id/title"
+                    android:text="mahesh"
+
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_18dp" />
+                <ImageView
+                    android:layout_weight="0.1"
+
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:padding="@dimen/margin_5"
+                    android:layout_margin="@dimen/_10sp"
+                    android:layout_gravity="center"
+                    android:id="@+id/vediocall_btn"
+                    android:background="@drawable/white_bg"
+                    android:src="@drawable/ic_video_call" />
+
+                <ImageView
+                    android:id="@+id/voicecall_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/white_bg"
+                    android:foregroundGravity="center"
+                    android:padding="@dimen/margin_5"
+                    android:src="@drawable/ic_call_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/menuicon"
+
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_10sp"
+                    android:layout_weight="0.1"
+                    android:padding="@dimen/margin_5"
+
+                    android:src="@drawable/ic_three_dots_more_vertical" />
+            </LinearLayout>
+
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/container_group_channel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"></FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

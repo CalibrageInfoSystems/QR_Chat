@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/extralightwhite"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".Views.home.ProfileSubActivities.AccountSettings">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolBarTheme.ToolBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/appColor"
+        android:visibility="visible"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+            <TextView
+
+                android:textStyle="bold"
+                style="@style/Text"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/back"
+                android:text="@string/accountsettings"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.9"
+        android:background="@color/extralightwhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:padding="4dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/phoneimage"
+                android:layout_weight="0.1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="1dp"
+                android:layout_marginLeft= "10dp"
+                android:src="@drawable/ic_voice_call"/>
+
+            <TextView
+                style="@style/CustomText"
+                android:id="@+id/phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="@string/phone"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                style="@style/CustomText"
+                android:id="@+id/phonenumber"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="+974 3074 0977"
+                android:textColor="@color/light_gray"
+                android:gravity="center"
+                android:textAlignment="textEnd"
+                tools:ignore="RtlCompat" />
+
+            <ImageView
+                android:id="@+id/phonerightarrow"
+                android:layout_weight="0.1"
+                android:layout_width="0dp"
+                android:padding="6dp"
+                android:layout_height="match_parent"
+                android:rotation="180"
+                android:src="@drawable/arrow_left_black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:padding="4dp"
+
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/qrchatidimage"
+                android:layout_weight="0.1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="1dp"
+                android:layout_marginLeft= "10dp"
+                android:src="@drawable/ic_qrcode"/>
+
+            <TextView
+                style="@style/CustomText"
+                android:id="@+id/qrchatid"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="@string/qrchatid"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                style="@style/CustomText"
+                android:id="@+id/qrchatidnumber"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="QRChat-xyz"
+                android:textColor="@color/light_gray"
+                android:gravity="center"
+                android:textAlignment="textEnd"
+                tools:ignore="RtlCompat" />
+
+            <ImageView
+                android:id="@+id/qrchatrightarrow"
+                android:layout_weight="0.1"
+                android:layout_width="0dp"
+                android:padding="6dp"
+                android:layout_height="match_parent"
+                android:rotation="180"
+                android:src="@drawable/arrow_left_black"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="4dp"
+
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/passwordimage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.1"
+            android:padding="1dp"
+            android:src="@drawable/password" />
+
+        <TextView
+            android:layout_weight="0.8"
+            style="@style/CustomText"
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/password"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textAlignment="textStart"
+            tools:ignore="RtlCompat"
+            />
+
+
+        <ImageView
+            android:id="@+id/passwordrightarrow"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:padding="6dp"
+            android:layout_height="match_parent"
+            android:rotation="180"
+            android:src="@drawable/arrow_left_black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="4dp"
+
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/emailimg"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="1dp"
+            android:layout_marginLeft= "10dp"
+            android:src="@drawable/email"/>
+
+        <TextView
+            android:layout_weight="0.8"
+            style="@style/CustomText"
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/email"
+            android:textColor="@color/black"
+            android:gravity="center"
+            tools:ignore="RtlCompat"
+           />
+
+        <ImageView
+            android:id="@+id/emailrightarrow"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:padding="6dp"
+            android:layout_height="match_parent"
+            android:rotation="180"
+            android:src="@drawable/arrow_left_black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="4dp"
+
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/facebookimg"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="1dp"
+            android:layout_marginLeft= "10dp"
+            android:src="@drawable/facebook"/>
+
+        <TextView
+            android:layout_weight="0.8"
+            style="@style/CustomText"
+            android:id="@+id/facebook"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/facebook"
+            android:textColor="@color/black"
+            android:gravity="center"
+            tools:ignore="RtlCompat"
+            />
+
+        <ImageView
+            android:id="@+id/facebookrightarrow"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:padding="6dp"
+            android:layout_height="match_parent"
+            android:rotation="180"
+            android:src="@drawable/arrow_left_black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:padding="4dp"
+
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/instaimg"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="1dp"
+            android:layout_marginLeft= "10dp"
+            android:src="@drawable/instagram"/>
+
+        <TextView
+            android:layout_weight="0.8"
+            style="@style/CustomText"
+            android:id="@+id/instagram"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/Instagram"
+            android:textColor="@color/black"
+            android:gravity="center"
+            tools:ignore="RtlCompat"
+            />
+
+        <ImageView
+            android:id="@+id/instarightarrow"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:padding="6dp"
+            android:layout_height="match_parent"
+            android:rotation="180"
+            android:src="@drawable/arrow_left_black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="4dp"
+
+        android:background="@color/white"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/loggeddevicesimg"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="1dp"
+            android:layout_marginLeft= "10dp"
+            android:src="@drawable/loggeddevicess"/>
+
+
+        <TextView
+            android:layout_weight="0.8"
+            style="@style/CustomText"
+            android:id="@+id/loggeddevices"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/loggeddevices"
+            android:textColor="@color/black"
+            android:gravity="center"
+            tools:ignore="RtlCompat"
+           />
+
+        <ImageView
+            android:id="@+id/loggeddevicesrightarrow"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:padding="6dp"
+            android:layout_height="match_parent"
+            android:rotation="180"
+            android:src="@drawable/arrow_left_black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="4dp"
+
+        android:background="@color/white"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/switchAccountimg"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="1dp"
+            android:layout_marginLeft= "10dp"
+            android:src="@drawable/switchaccountss"/>
+
+        <TextView
+            android:layout_weight="0.8"
+            style="@style/CustomText"
+            android:id="@+id/switchAccount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/switchaccount"
+            android:textColor="@color/black"
+            android:gravity="center"
+            tools:ignore="RtlCompat"
+            />
+
+        <ImageView
+            android:id="@+id/switchaccountrightarrow"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:padding="6dp"
+            android:layout_height="match_parent"
+            android:rotation="180"
+            android:src="@drawable/arrow_left_black"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:layout_marginBottom="5dp"
+        android:gravity="bottom|center"
+        android:orientation="horizontal">
+
+    <Button
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:id="@+id/logout"
+        android:layout_height="match_parent"
+        android:text="@string/logout"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

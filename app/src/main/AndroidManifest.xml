@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cis.qrchat">
+
+    <application
+        android:name=".Chat.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_qr"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logo_qr"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:hardwareAccelerated="true"
+        android:requestLegacyExternalStorage="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Views.home.HaditContactlist"
+            android:theme="@style/NoActionBar"></activity>
+        <activity
+            android:name=".Views.home.HaditCoverActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.home.HadiatMoney"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.home.Contactus"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".SplitMoney.TransactionSummary"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.home.ProfileSubActivities.MyLifeshots"
+            android:theme="@style/NoActionBarOptionsMenu" />
+        <activity android:name=".SplitMoney.NewSplitActivity" />
+        <activity
+            android:name=".Views.account.ViewContactdetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarOptionsMenu" />
+        <activity
+            android:name=".Views.home.FeedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.home.SearchContactlist"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".SplitMoney.AddTransactions"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SplitMoney.SplitActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity> <!-- <activity -->
+        <!-- android:name=".TestActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/NoActionBar" -->
+        <!-- > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorStickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorTextActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorDrawActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name=".Views.home.TransactionsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.home.ReciveMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.home.GetContactlist"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.home.QRScannerMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.home.sendmoneyMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.home.SendMoney"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity android:name=".Chat.chatactivity.QrChatChannelActivity" />
+        <activity
+            android:name=".Views.account.Contactlist"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.account.AddFriendsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Chat.Groupchat.PhotoViewerActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Chat.Groupchat.MediaPlayerActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Chat.CustomChannelSettingsActivity"
+            android:parentActivityName=".Chat.CustomChannelActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.home.sendmoney_QRScannerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Chat.Groupchat.GroupChannelActivity"
+            android:parentActivityName=".Chat.CustomChannelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Chat.CustomMemberListActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Chat.CustomInviteChannelActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Chat.call.VideoCallActivity"
+            android:configChanges="orientation|smallestScreenSize|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/CallTheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Chat.CustomChannelActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Chat.CustomCreateChannelActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Chat.CustomPromoteOperatorsActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Chat.CustomBannedListActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Chat.CustomModerationActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Chat.CustomMutedMemberListActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Chat.CustomOperatorListActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".TestActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.home.ProfileSubActivities.ShowCards"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.home.ProfileSubActivities.AddCardDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.home.ChatRoomActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.home.QRScannerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.home.ProfileSubActivities.QRWalletActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.home.myprofile"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.home.ProfileSubActivities.ReceiveMoneyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.home.ProfileSubActivities.QRMoneyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.home.ProfileSubActivities.QRPayAccount"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.home.ProfileSubActivities.AppSettings"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.home.ProfileSubActivities.AccountSettings"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.account.LanguageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.home.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.account.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Views.account.OTPActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".SplitMoney.SplitMainActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".SplitMoney.AddEditBillActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".SplitMoney.AddEditMemberActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".SplitMoney.CreateNewGroupActivity"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SplitMoney.GroupListActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".SplitMoney.HandleOnGroupClickActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Chat.call.VoiceCallActivity"
+            android:configChanges="orientation|smallestScreenSize|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/CallTheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Views.splashScreen.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "sendbird://” -->
+                <data android:scheme="sendbird" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Views.account.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/icon_push_lollipop" /> <!-- <service -->
+        <!-- <service -->
+        <!-- android:name=".Chat.fcm.MyFirebaseMessagingService" -->
+        <!-- android:exported="false"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.firebase.MESSAGING_EVENT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <!-- <service -->
+        <!-- android:name=".Chat.fcm.MyFirebaseMessagingServiceCall" -->
+        <!-- android:exported="false"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.firebase.MESSAGING_EVENT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.cis.qrchat.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                tools:replace="android:resource" />
+        </provider>
+
+        <service
+            android:name=".Chat.call.CallService"
+            android:stopWithTask="false" />
+
+        <service
+            android:name=".Chat.fcm.MyFirebaseMessagingServiceCall"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+
+    <uses-permission
+        android:name="android.permission.VIBRATE"
+        android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+
+
+    <uses-sdk tools:overrideLibrary="com.stfalcon.multiimageview" />
+
+</manifest>

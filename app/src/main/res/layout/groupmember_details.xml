@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:rowCount="2"
+    android:columnCount="2"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="60dp"
+        android:layout_gravity="center"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="@color/appColor"
+        app:cardCornerRadius="60dp"
+        android:id="@+id/cardview">
+
+    <LinearLayout
+        android:id="@+id/memberDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+             android:scaleType="fitXY"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/profileImg"
+            android:src="@drawable/ic_user_contactss"/>
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:maxLines="2"
+        android:text="ckljsgdjjjgsssssssssssssssssssssss"
+        android:id="@+id/memberName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:textColor="@color/appColor"
+        android:textSize="16dp"/>
+
+</GridLayout>
